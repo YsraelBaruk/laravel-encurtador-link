@@ -9,3 +9,11 @@
 @else
     <h3>Não há fornecedores cadastrados</h3>
 @endif
+
+@isset($fornecedores)
+    @foreach ($fornecedores as $indice => $fornecedor)
+        Fornecedor: {{$fornecedor['nome']}}
+        </br>
+        Status: {{$fornecedor['status'] ?? 'Sem status definido!'}}
+    @endforeach
+@endisset
