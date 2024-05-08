@@ -8,9 +8,9 @@ class FornecedoresController extends Controller
 {
     public function fornecedores(){
         $fornecedores = [
-            'nome'=> 'Fornecedor 1', 'status' => 'Ativo',
-            'nome'=> 'Fornecedor 2', 'status' => 'Ativo',
-            'nome'=> 'Fornecedor 3', 'status' => 'Ativo',
+            0 => ['nome'=> 'Fornecedor 1', 'status' => 'Ativo'],
+            1 => ['nome'=> 'Fornecedor 2', 'status' => 'Ativo'],
+            2 => ['nome'=> 'Fornecedor 3', 'status' => 'Ativo'],
         ];
         return View('site.fornecedores', compact('fornecedores'));
     }
