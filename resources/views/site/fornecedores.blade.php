@@ -1,4 +1,5 @@
 @extends('site.layouts.basico')
+@section('titulo', 'Fornecedores')
 @section('conteudo')
     @include('site.layouts._partials.menu')
     <h1>Fornecedores</h1>
