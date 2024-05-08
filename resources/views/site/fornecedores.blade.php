@@ -13,7 +13,7 @@
 @isset($fornecedores)
     @foreach ($fornecedores as $indice => $fornecedor)
         Fornecedor: {{$fornecedor['nome']}}
-        </br>
         Status: {{$fornecedor['status'] ?? 'Sem status definido!'}}
+        <br>
     @endforeach
 @endisset
