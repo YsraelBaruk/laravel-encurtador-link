@@ -12,8 +12,14 @@
 
 @isset($fornecedores)
     @foreach ($fornecedores as $indice => $fornecedor)
-        Fornecedor: {{$fornecedor['nome']}}
-        Status: {{$fornecedor['status'] ?? 'Sem status definido!'}}
+        Interação {{$loop->iteration}}
         <br>
+        @if ($loop->first)
+            <h1>Primeiro Fornecedor</h1>
+        @endif
+        Fornecedor: {{$fornecedor['nome']}}
+        <br>
+        Status: {{$fornecedor['status'] ?? 'Sem status definido!'}}
+        <hr>
     @endforeach
 @endisset
